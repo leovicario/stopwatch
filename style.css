@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    margin: 15% auto;
+    padding: 1%;
+    background-image: linear-gradient(to bottom right, lightsalmon, rgb(192, 19, 106));
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    padding: 10px auto;
+    margin: -10px auto;
+    font-size: 4vw;
+    text-shadow: 5px 5px maroon;
+}
+button {
+    color: white;
+    background-color: salmon;
+    border-style: none;
+    padding: 10px 50px;
+    margin: 0 0 3vw;
+    font-weight: 900;
+}
+
+#counter {
+    font-size: 50px;
+    font-weight: 900;   
+    display: inline-flex;
+}
+
+#stopwatch.active {
+    position: float;
+    animation: haha 1s infinite ease-in-out;
+}
+
+#milesimas.active, #segundos.active, #puntos.active {
+    animation: color_change 1s infinite ease-in-out ;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+  }
+  
+@keyframes haha {
+    0%    {text-shadow: 5px 5px maroon;}
+    50%   {text-shadow: 10px 10px blue;} 
+    100%    {text-shadow: 5px 5px maroon;}
+
+}
+
+
+
+@keyframes color_change {
+    0%   {color: yellow;}
+    25%  {color: greenyellow;}
+    50%  {color: salmon;}
+    75%  {color: rgb(165, 32, 72)}
+    100% {color: rgb(79, 29, 92);}
+}
+  
